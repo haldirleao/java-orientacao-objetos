@@ -1,7 +1,7 @@
-package aula4;
+package aula4_1;
 
 /* Classe de exemplo para o exercício da Aula 4 de OO */
 
-public class Carro extends Veiculo {
+public class Caminhao extends Veiculo {
     
 }

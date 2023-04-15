@@ -82,7 +82,17 @@ seus próprios membros."
 
 **Downcasting** é quando o objeto se passa como se fosse um subtipo dele. Não há garantias que funcione (pode lançar uma `ClassCastException`, o que obviamente é um erro de programação) e pode haver necessidade de conversões. O compilador só aceita se ele puder provar que o objeto se encaixará perfeitamente e seja de fato aquele objeto. Por isso deve ser explicitado pelo programador quando deseja essa ação. A coerção ocorre em tempo de execução. Algumas pessoas gostam de chamar de **demoção de tipo** (apesar de ser um neologismo). **CUIDADO! ao usar o downcasting, já que pode ocorrer erros, inclusive em tempo de execução!**
 
-**Polimorfismo**
+**Polimorfismo**: _"A mesma ação (método), se comportando diferente"_. https://pt.wikipedia.org/wiki/Polimorfismo_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)
+
+**Sobrescrita**: _"A mesma ação (método), podendo se comportar diferente"_. https://www.devmedia.com.br/sobrescrita-e-sobrecarga-de-metodos-em-java/22603
+
+**Polimorfismo vs Sobrescrita**. Ambos são a mesma coisa? Segundo Thiago Leite, sim e não. Pensando somente na implementação, ambos são iguais, porém conceitualmente são diferentes. A sobrescrita "sobrescreve" algo existente, no caso sobrescreve um comportamento padrão da superclasse. É usada conforme a necessidade da aplicação.
+
+No polimorfismo não existe a necessidade de um comportamento padrão da superclasse, até porque geralmente o método do qual desejamos prover o comportamento polimórfico é abstrato.
+
+Assim se conclui: toda sobrescrita também é um polimorfismo, pois ao sobrescrever um comportamento, terminamos provendo um novo comportamento à subclasse. Já o polimorfismo não é obrigatoriamente uma sobrescrita, pois se tivermos um método abstrato (sem uma implementação) não temos o que redefinir.
+
+Exemplo: ver códigos-fonte da pasta _scr/polimorfismo\_exemplo_.
 
 ### Associação
 

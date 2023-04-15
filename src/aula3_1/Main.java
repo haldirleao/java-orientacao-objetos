@@ -1,4 +1,4 @@
-package aula3;
+package aula3_1;
 
 /* Classe de exemplo para o exercício da Aula 3 de OO */
 

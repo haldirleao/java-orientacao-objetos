@@ -1,4 +1,6 @@
-package oo;
+package aula3;
+
+/* Classe de exemplo para o exercício da Aula 3 de OO */
 
 public class Main {
     public static void main(String[] args) {

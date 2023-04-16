@@ -151,20 +151,15 @@ https://docs.oracle.com/javase/tutorial/java/package/packages.html
 https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 
 >_"Um modificador de acesso tem como finalidade determinar até que ponto uma classe, atributo ou método pode ser usado. A utilização de modificadores de acesso é fundamental para o uso efetivo da Orientação a Objetos. Algumas boas práticas e conceitos só são atingidos com o uso correto deles."_
-
-Tipos:
-- `private` : visível somente dentro da classe
-- `protected` : visível dentro da classe, mesmo pacote e subclasses
-- `public` : vísivel para toda a aplicação.
   
-Nível de acesso:
+Tipos e níveis de acesso:
 
-| Modificador  | Classe | Pacote  |Subclasse | Mundo |
-|--------------|--------|---------|----------|-------|
-| `public`     | Y      | Y       | Y        | Y     |
-| `protected`  | Y      | Y       | Y        | N     |
-| no modifier  | Y      | Y       | N        | N     |
-| `private`    | Y      | N       | N        | N     |
+| Modificador |Classe|Pacote|Subclasse|Mundo|
+|-------------|------|------|---------|-----|
+| `public`    | Y    |Y     | Y       |Y    |
+| `protected` | Y    |Y     | Y       |N    |
+| no modifier | Y    |Y     | N       |N    |
+| `private`   | Y    |N     | N       |N    |
 
 ### Estude também sobre...
 Conceitos não detalhados neste curso, com a sugestão do instrutor que sejam estudados e entendidos futuramente:
